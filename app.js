@@ -3,7 +3,7 @@ const rotaAdmin = require("./app/routes/admin.js")(app);//importação da rota "
 const rotaHome = require("./app/routes/home.js")(app);//importação da rota principal do projeto "localhost:3000/"
 const rotaNoticias = require("./app/routes/noticias.js")(app);//importação da rota "/noticias"
 
-//Cria um servidor rodando na porta 3000
+//Criação de um servidor que está rodando na porta 3000
 app.listen("3000", ()=>{
 	console.log("Server On");
 });
