@@ -5,10 +5,11 @@
 	</head>
 	<body>
 		<h1>Notícias</h1>
-		<table><!--estrutuação dos resultados do banco de dados para a view e a view por sua vez mostra esses resultados na tela-->
+		<table>
 			<tr>ID</tr>
 			<tr>Título</tr>
 			<tr>Notícia</tr>
+			<!--estrutuação dos resultados do banco de dados para a view e a view por sua vez mostra esses resultados na tela-->
 			<% for (var i=0; i<noticias.length; i++) {%>
 			<tr>
 				<td><%=noticias[i].id_noticia %></td>
