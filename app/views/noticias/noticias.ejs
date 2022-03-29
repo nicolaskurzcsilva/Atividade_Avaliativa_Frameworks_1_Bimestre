@@ -1,0 +1,21 @@
+<!DOCTYPE html><!--criação da tela "/noticias"-->
+<html>
+	<head>
+		<title>Notícias</title>
+	</head>
+	<body>
+		<h1>Notícias</h1>
+		<table><!--estrutuação dos resultados do banco de dados para a view e a view por sua vez mostra esses resultados na tela-->
+			<tr>ID</tr>
+			<tr>Título</tr>
+			<tr>Notícia</tr>
+			<% for (var i=0; i<noticias.length; i++) {%>
+			<tr>
+				<td><%=noticias[i].id_noticia %></td>
+				<td><%=noticias[i].titulo %></td>
+				<td><%=noticias[i].noticia %></td>
+			</tr>
+			<% } %>
+		</table>		
+	</body>
+</html>
